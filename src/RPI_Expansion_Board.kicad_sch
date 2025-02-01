@@ -1232,6 +1232,50 @@
 		)
 		(uuid "e32ac78b-2d5c-4a7a-8904-afc0437ce485")
 	)
+	(global_label "SD_PWR_ON"
+		(shape input)
+		(at 223.52 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4aca8729-f02e-46ac-8fbc-04ecab038198")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.1219 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SD_PWR"
+		(shape output)
+		(at 223.52 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "932ec521-4b8c-4cf0-a15f-faaed3b47a4f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.7505 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 64.77 100.33 0)
@@ -1808,7 +1852,7 @@
 		)
 	)
 	(sheet
-		(at 109.22 76.2)
+		(at 158.75 78.74)
 		(size 46.99 31.75)
 		(fields_autoplaced yes)
 		(stroke
@@ -1820,7 +1864,7 @@
 		)
 		(uuid "560f3913-541f-48a0-bfef-8f73b7adddd0")
 		(property "Sheetname" "High Speed"
-			(at 109.22 75.4884 0)
+			(at 158.75 78.0284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1829,7 +1873,7 @@
 			)
 		)
 		(property "Sheetfile" "highspeed.kicad_sch"
-			(at 109.22 108.5346 0)
+			(at 158.75 111.0746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1846,7 +1890,7 @@
 		)
 	)
 	(sheet
-		(at 173.99 76.2)
+		(at 223.52 78.74)
 		(size 38.1 31.75)
 		(fields_autoplaced yes)
 		(stroke
@@ -1858,7 +1902,7 @@
 		)
 		(uuid "dde6d034-7afc-4088-bee0-1c7f5a5432e0")
 		(property "Sheetname" "GPIO & Low Speed"
-			(at 173.99 75.4884 0)
+			(at 223.52 78.0284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1867,13 +1911,33 @@
 			)
 		)
 		(property "Sheetfile" "gpio_low_speed.kicad_sch"
-			(at 173.99 108.5346 0)
+			(at 223.52 111.0746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "SD_PWR" input
+			(at 223.52 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1d0e946e-344b-4e62-bf27-20f82f559e34")
+		)
+		(pin "SD_PWR_ON" output
+			(at 223.52 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6c13305d-87b6-4124-a215-d48b55777c98")
 		)
 		(instances
 			(project "RPI_Expansion_Board"

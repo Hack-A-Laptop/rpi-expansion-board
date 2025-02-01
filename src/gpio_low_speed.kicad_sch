@@ -9764,6 +9764,30 @@
 			)
 		)
 	)
+	(hierarchical_label "SD_PWR"
+		(shape input)
+		(at 205.74 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45e7c920-b2a6-40de-a750-be3e6fbb3224")
+	)
+	(hierarchical_label "SD_PWR_ON"
+		(shape output)
+		(at 124.46 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8cd8d00a-ea9f-4df9-9286-2963ad865e6d")
+	)
 	(symbol
 		(lib_id "Connector:RJ45_JK0654219")
 		(at 264.16 53.34 0)
